@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light dark;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+.dark {
+  color-scheme: dark;
+}
+
+::selection {
+  background: rgba(59, 130, 246, 0.2);
+  color: #ffffff;
+}
+/* For WebKit browsers (Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; /* Dark mode background */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d3d3d3; /* Gray scrollbar */
+  border-radius: 4px;
+}
+.dark ::-webkit-scrollbar-thumb {
+  background: #333; /* Gray scrollbar */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #333; /* Darker scrollbar on hover */
+}
